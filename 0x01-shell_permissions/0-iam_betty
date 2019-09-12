@@ -1,1 +1,2 @@
-usermod -l
+#!/bin/bash
+usermod
