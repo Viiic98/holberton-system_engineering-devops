@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -iregex '.*\.gif' -printf '%f\n' |  cut  -d "." -f1 | sort -d
