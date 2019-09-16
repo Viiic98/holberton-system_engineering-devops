@@ -15,3 +15,4 @@ In the global and local variables we cant add spaces between V_NAME="Value"
 10. How you can elevate one variable to other (Exponential)
 
 12. Display a combination of letter using translate for change the spaces for the new line and using grep invert for delete letters for the exception
+13. For display floats with printf you can especify the number of decimal do you want before "f"
