@@ -6,3 +6,5 @@
 3. Count the number of directories in the current directory
 4. Print the global variables with printenv
 5. Printing all local variables with the command set
+6. We can create local variables only writing "Variable name="Value"
+The local variables can be created with anycharacter but can't begin with a digit
