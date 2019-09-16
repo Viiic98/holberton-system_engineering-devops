@@ -4,6 +4,7 @@
 1. How you can print the name of the current user using $USER
 2. For add a directory into $PATH we need to use export for global variables and after equals call the variable with $, after this use :/name directory
 3. Count the number of directories into the variable $PATH using tr for translate ":" to "\n" and after use wc -l for count the number of lines(Directories)
+But we have other form to convert binary to decimal, we can use 2#BINARYNUMBER
 4. Print the global variables with printenv
 5. Printing all local variables with the command set
 6. We can create local variables only writing "Variable name="Value"
