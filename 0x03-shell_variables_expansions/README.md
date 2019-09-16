@@ -4,3 +4,4 @@
 1. How you can print the name of the current user using $USER
 2.
 3. Count the number of directories in the current directory
+4. Print the global variables with printenv
