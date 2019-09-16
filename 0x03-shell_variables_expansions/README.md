@@ -13,3 +13,5 @@ In the global and local variables we cant add spaces between V_NAME="Value"
 8. Creating a script that addition to global variable - between number and global variable
 9. Creating a division for two global variables
 10. How you can elevate one variable to other (Exponential)
+
+12. Display a combination of letter using translate for change the spaces for the new line and using grep invert for delete letters for the exception
