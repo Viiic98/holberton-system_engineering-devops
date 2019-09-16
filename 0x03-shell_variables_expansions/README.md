@@ -10,3 +10,6 @@
 The local variables can be created with anycharacter but can't begin with a digit
 7. We can create a global variable adding export before the variable name, for example "export V_NAME="Value""
 In the global and local variables we cant add spaces between V_NAME="Value"
+8. Creating a script that addition to global variable - between number and global variable
+9. Creating a division for two global variables
+10. How you can elevate one variable to other (Exponential)
