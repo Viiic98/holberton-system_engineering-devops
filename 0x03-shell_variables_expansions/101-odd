@@ -1,2 +1,2 @@
 #!/bin/bash
-paste - - | sort
+rev | cut -d "-" -f1 | rev | paste -d" " - - | cut -d " " -f1 | sort
