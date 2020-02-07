@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Using read
+while read -r line
+do
+    echo "$line"
+done < "/etc/passwd"
