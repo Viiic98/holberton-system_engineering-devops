@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Create a history
+IFS=:
+while read -r usr_n psw usr_id g_id u_inf h_dir c_shell
+do
+    echo "The user $usr_n is part of the $g_id, lives in $h_dir and rides $c_shell. $usr_id place is protected by the passcode $psw, more info about the user here: $u_inf"
+done < "/etc/passwd"
