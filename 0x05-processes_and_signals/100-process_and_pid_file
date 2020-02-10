@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-#
+# Creates a file and save the PID and after kill itself
 sudo bash -c "echo $$ > /var/run/holbertonscript.pid"
 
 trap sterm SIGTERM
 trap sint SIGINT
-trap sq SIGQUIT
+trap sterm SIGQUIT
 
 sterm(){
     echo "I hate the kill command"
