@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+#
+sudo bash -c "echo $$ > /var/run/holbertonscript.pid"
+
+trap sterm SIGTERM
+trap sint SIGINT
+trap sq SIGQUIT
+
+sterm(){
+    echo "I hate the kill command"
+    sudo rm /var/run/holbertonscript.pid
+    exit
+}
+sint(){
+    echo "Y U no love me?!"
+}
+
+i=1
+while [ $i -eq 1 ]
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
