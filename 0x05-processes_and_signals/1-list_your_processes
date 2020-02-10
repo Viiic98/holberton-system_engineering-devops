@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Display all process for all users
+ps -A uf
