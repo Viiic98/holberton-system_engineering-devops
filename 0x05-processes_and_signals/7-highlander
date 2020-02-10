@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#
+# Trap a sigterm
 trap disp SIGTERM
 
 disp(){
