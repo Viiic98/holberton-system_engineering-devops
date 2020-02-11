@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+# Using functions, start, stop and restart a process
+start(){
+    ./manage_my_process &
+    echo "$!" > /var/run/my_process.pid
+}
+stop(){
+    sudo kill "$(cat /var/run/my_process.pid)"
+    sudo rm /var/run/my_process.pid
+}
+restart(){
+    stop
+    start
+}
+
+sudo chmod u+x manage_my_process
+case $1 in
+    start)
+        echo "manage_my_process started"
+        start
+        ;;
+    stop)
+        echo "manage_my_process stopped"
+        stop
+        ;;
+    restart)
+        echo "manage_my_process restarted"
+        restart
+        ;;
+    *)
+    echo "Usage: manage_my_process {start|stop|restart}"
+esac
