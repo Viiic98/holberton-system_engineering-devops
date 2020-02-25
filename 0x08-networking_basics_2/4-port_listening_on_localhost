@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Receive text from a port
+nc -l 98
