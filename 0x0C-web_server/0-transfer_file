@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Script that transfer a file to a server
+
+if (($# < 3))
+then
+    echo "Usage: 0-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
+else
+    path_to_file=$1
+    ip=$2
+    username=$3
+    if (($# == 4))
+    then
+        path_to_key=$4
+        scp -i "$path_to_key" "$path_to_file" "$username@$ip:~/"
+    elif (($# == 3))
+    then
+        scp "$path_to_file" "$username@$ip:~/"
+    fi
+fi
