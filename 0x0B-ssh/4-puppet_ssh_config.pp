@@ -1,3 +1,5 @@
+# Modify ssh_config using puppet
+
 file_line { 'Set identify file':
     ensure =>'present',
     path   =>'/etc/ssh/ssh_config',
