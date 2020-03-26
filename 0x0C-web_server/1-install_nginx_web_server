@@ -7,4 +7,4 @@ sudo apt-get -y install nginx
 sudo ufw allow 'Nginx HTTP'
 # content html
 echo "Holberton School" > /var/www/html/index.html
-sudo systemctl start nginx
+sudo /etc/init.d/nginx start
