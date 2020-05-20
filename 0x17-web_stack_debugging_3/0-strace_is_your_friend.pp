@@ -1,7 +1,5 @@
 # WordPress Error
-file_line { 'WordPress apache2 500':
-  ensure => present,
-  path   => '/var/www/html/wp-settings.php',
-  line   => 'require_once( ABSPATH . WPINC . '/class-wp-locale.php' );',
-  match  => 'require_once( ABSPATH . WPINC . '/class-wp-locale.phpp' );'
+exec { 'WordPress apache2 500':
+  command => 'sed -i s/.phpp/.php/g /var/www/html/wp-settings.php',
+  path    => '/bin'
 }
